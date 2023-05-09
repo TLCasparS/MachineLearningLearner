@@ -11,3 +11,5 @@ columnList = ["LSD_ppm", "Avg_Math_Test_Score"] # list erstellen
 
 cleanData = data[columnList] # liste als Schablone für neuen DataFrame benutzen
 print(cleanData)
+
+cleanData = data[["LSD_ppm", "Avg_Math_Test_Score"]] #macht das selbe in einer Zeile
