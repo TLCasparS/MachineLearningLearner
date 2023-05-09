@@ -35,3 +35,6 @@ plt.xlabel('Revenue')
 plt.ylabel('Budget')
 plt.title("film cost vs revenue")
 plt.show()
+
+R2= regression.score(X,y) # gbt uns R²
+print(R2)
