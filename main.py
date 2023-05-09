@@ -2,6 +2,8 @@ import pandas
 import matplotlib
 import matplotlib.pyplot as plt
 from pandas import DataFrame
+from sklearn.linear_model import LinearRegression
+ 
 
 
 
@@ -30,3 +32,8 @@ plt.xlabel('Revenue')
 plt.ylabel('Budget')
 plt.title("film cost vs revenue")
 plt.show()
+
+regression = LinearRegression()
+regression.fit(x,y)
+
+regression.coeff_ # gibt uns den Steigungskoeffizienten der linearen Regression
