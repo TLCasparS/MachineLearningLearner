@@ -31,6 +31,10 @@ plt.scatter(X,y, alpha=0.3)
 
 plt.plot(X, regression.predict(X), color="red")
 
+R2= round(regression.score(X,y),4) # gibt uns R²
+plt.legend(["films",f"R² = {R2}"]) # plotten eine Legende 
+
+
 plt.xlabel('Revenue')
 plt.ylabel('Budget')
 plt.title("film cost vs revenue")
