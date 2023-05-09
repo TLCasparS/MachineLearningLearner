@@ -35,5 +35,6 @@ plt.show()
 
 regression = LinearRegression()
 regression.fit(x,y)
+regression.intercept_ # y achsen abschnitt
 
 regression.coeff_ # gibt uns den Steigungskoeffizienten der linearen Regression
